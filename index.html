@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Marcus</span><br>Arvidsson<br>from Arbrå, Sweden</h1>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/file-removebg-preview.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <p>Greetings! I'm a 30-year-old father embarking on a thrilling journey as a student in IT programming at Lexicon Gävle. While my knowledge may be fledgling, my passion for learning is boundless.</p>
+                    <p>Immersing myself in the realms of HTML and CSS has been a revelation. Crafting this webpage has been a testament to the captivating intricacies of web development. From humble beginnings, I've delved into the artistry of code, finding joy in every pixel and line.</p>
+                    <p>As I stride forward into this new chapter of my life, I embrace the challenges and opportunities that lie ahead. With determination and an insatiable curiosity, I eagerly anticipate the adventures awaiting me in the world of IT programming.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>Designing websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Excel, Word, and HTML-CSS</li>
+                            <li><span>2023 - Current</span><br>Elderly care</li>
+                            <li><span>2021 - 2023</span><br>Welder for Wikan Personal</li>
+                            <li><span>2018 - 2019</span><br>Welder in Poland for Haber Yachts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Excel och VBA, Word, Microsoft 365, Access, SQL och Power BI, Html, Css, Javascript, Mysql, och C#.</li>
+                            <li><span>2014 - 2015</span><br>Yrkesakademin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects and CV</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/HTML2.jpg">
+                    <div class="layer">
+                        <h3>HTML-CSS projects</h3>
+                        <p> This is on my GitHub</p>
+                        <a href="https://github.com/ArvidTheSon"><i class="fas fa-external-link-alt"></i> View on GitHub</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/excel2.jpg">
+                    <div class="layer">
+                        <h3>Excel</h3>
+                        <p>My Projects in Excel</p>
+                        <a href="images/Excel_Grunden_marcus_arvidsson.xlsx" download="Excel_Grunden_marcus_arvidsson.xlsx"><i class="fas fa-download"></i> Download Excel</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/word2.jpg">
+                    <div class="layer">
+                        <h3>Word projects</h3>
+                        <p>My projects in Word</p>
+                        <a href="https://drive.google.com/file/d/16r10t3vGKOM4fMaXCswZlJNk7jXEAm-Y/view?usp=sharing"><i class="fas fa-external-link-alt"></i> View on Google Drive</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pixelarts.jpg">
+                    <div class="layer">
+                        <h3>My Pixel Art</h3>
+                        <p>My art projects</p>
+                        <a href="https://drive.google.com/file/d/1OVMe73zg61fCo0Dz2sLf3Smf07hibROi/view?usp=sharing"><i class="fas fa-external-link-alt"></i> View on Google Drive</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Skärmbild 2024-06-01 091426.png">
+                    <div class="layer">
+                        <h3>My CV</h3>
+                        <a href="https://drive.google.com/file/d/1WPDGGLzY1DX_vm2z698D-EXMEUto51lf/view?usp=sharing"><i class="fas fa-external-link-alt"></i> View on Google Drive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p>Marcus-arvidsson@hotmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy; Marcus Arvidsson</p>
+    </div>
+
+    <script>
+        // JavaScript code for tab functionality
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(var i = 0; i < tablinks.length; i++){
+                tablinks[i].classList.remove("active-link");
+            }
+            for(var i = 0; i < tabcontents.length; i++){
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6srgMR-wIfw8AO7NJrCOFz-m67w-gIwV7Onfp296VlJPzW2N5jq6MxV88KnFT8o3ezg/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
